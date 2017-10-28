@@ -1,0 +1,2799 @@
+---------------------------------------------------------------
+[ 2017-09-30T00:21:03+08:00 ] 10.135.33.45 47.92.148.207 GET /w00tw00t.at.blackhats.romanian.anti-sec:)
+[ info ] 119.29.24.237/w00tw00t.at.blackhats.romanian.anti-sec:) [运行时间：0.027589s][吞吐率：36.25req/s] [内存消耗：973.26kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '403',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+  'user-agent' => 'ZmEu',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-us',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/403_html' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T01:40:36+08:00 ] 10.135.33.45 14.17.3.65 GET /
+[ info ] 119.29.24.237/ [运行时间：0.055445s][吞吐率：18.04req/s] [内存消耗：2,368.47kb] [文件加载：59]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wwwroot\119.29.24.237\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wwwroot\119.29.24.237\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'cats',
+  3 => 'controller',
+  4 => 'user',
+  5 => 'title',
+  6 => 'bigImages',
+  7 => 'smallImages',
+  8 => 'foodCates',
+  9 => 'dealFoods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001042s ] mysql:dbname=o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` <> 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'bozhou' LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 5 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,6,9,8,2)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1506706836  AND `category_id` = 1  AND `city_id` = 12  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 4 [ RunTime:0.000452s ]
+---------------------------------------------------------------
+[ 2017-09-30T01:49:43+08:00 ] 10.135.33.45 101.104.43.215 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.022369s][吞吐率：44.70req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T03:46:40+08:00 ] 10.135.33.45 101.104.61.41 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.030433s][吞吐率：32.86req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T04:02:31+08:00 ] 10.135.33.45 101.104.57.218 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.018169s][吞吐率：55.04req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T04:05:29+08:00 ] 10.135.33.45 101.104.32.202 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.029122s][吞吐率：34.34req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T04:06:56+08:00 ] 10.135.33.45 60.191.38.77 GET /
+[ info ] 119.29.24.237:80/ [运行时间：0.054945s][吞吐率：18.20req/s] [内存消耗：2,368.35kb] [文件加载：59]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '119.29.24.237:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wwwroot\119.29.24.237\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wwwroot\119.29.24.237\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'cats',
+  3 => 'controller',
+  4 => 'user',
+  5 => 'title',
+  6 => 'bigImages',
+  7 => 'smallImages',
+  8 => 'foodCates',
+  9 => 'dealFoods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001152s ] mysql:dbname=o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.001515s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` <> 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'bozhou' LIMIT 1 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.001168s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 5 [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,6,9,8,2)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1506715616  AND `category_id` = 1  AND `city_id` = 12  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 4 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2017-09-30T04:26:14+08:00 ] 10.135.33.45 192.99.10.173 GET /
+[ info ] 119.29.24.237/ [运行时间：0.052960s][吞吐率：18.88req/s] [内存消耗：2,367.97kb] [文件加载：59]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wwwroot\119.29.24.237\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wwwroot\119.29.24.237\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'cats',
+  3 => 'controller',
+  4 => 'user',
+  5 => 'title',
+  6 => 'bigImages',
+  7 => 'smallImages',
+  8 => 'foodCates',
+  9 => 'dealFoods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000932s ] mysql:dbname=o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` <> 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'bozhou' LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 5 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,6,9,8,2)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1506716774  AND `category_id` = 1  AND `city_id` = 12  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 4 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2017-09-30T04:35:25+08:00 ] 10.135.33.45 14.17.21.58 GET /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.020454s][吞吐率：48.89req/s] [内存消耗：973.81kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T04:56:50+08:00 ] 10.135.33.45 101.104.61.223 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.019091s][吞吐率：52.38req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T05:18:03+08:00 ] 10.135.33.45 101.104.54.106 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.024057s][吞吐率：41.57req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T05:27:35+08:00 ] 10.135.33.45 101.104.58.26 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.019363s][吞吐率：51.65req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T05:54:42+08:00 ] 10.135.33.45 101.104.44.252 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.017533s][吞吐率：57.04req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:41:05+08:00 ] 10.135.33.45 101.104.55.90 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.018845s][吞吐率：53.06req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:41:55+08:00 ] 10.135.33.45 101.104.39.231 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.024005s][吞吐率：41.66req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:42:25+08:00 ] 10.135.33.45 101.104.45.145 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.018750s][吞吐率：53.33req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:43:00+08:00 ] 10.135.33.45 101.104.39.181 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.021697s][吞吐率：46.09req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:43:07+08:00 ] 10.135.33.45 101.104.55.65 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.027597s][吞吐率：36.24req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:43:11+08:00 ] 10.135.33.45 101.104.32.74 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.021386s][吞吐率：46.76req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:43:12+08:00 ] 10.135.33.45 101.104.33.237 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.017698s][吞吐率：56.50req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:43:27+08:00 ] 10.135.33.45 101.104.38.98 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.017054s][吞吐率：58.64req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:43:28+08:00 ] 10.135.33.45 101.104.53.163 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.018641s][吞吐率：53.65req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:44:09+08:00 ] 10.135.33.45 101.104.60.225 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.017949s][吞吐率：55.71req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:44:19+08:00 ] 10.135.33.45 101.104.58.3 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.030875s][吞吐率：32.39req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:44:42+08:00 ] 10.135.33.45 101.104.57.218 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.025907s][吞吐率：38.60req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:45:19+08:00 ] 10.135.33.45 101.104.45.58 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.018602s][吞吐率：53.76req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:47:21+08:00 ] 10.135.33.45 183.57.53.197 GET /
+[ info ] 119.29.24.237/ [运行时间：0.054989s][吞吐率：18.19req/s] [内存消耗：2,368.47kb] [文件加载：59]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wwwroot\119.29.24.237\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wwwroot\119.29.24.237\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'cats',
+  3 => 'controller',
+  4 => 'user',
+  5 => 'title',
+  6 => 'bigImages',
+  7 => 'smallImages',
+  8 => 'foodCates',
+  9 => 'dealFoods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001054s ] mysql:dbname=o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` <> 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'bozhou' LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 5 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,6,9,8,2)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1506725241  AND `category_id` = 1  AND `city_id` = 12  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 4 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2017-09-30T06:48:17+08:00 ] 10.135.33.45 101.104.62.17 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.028738s][吞吐率：34.80req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:50:52+08:00 ] 10.135.33.45 101.104.54.93 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.020460s][吞吐率：48.88req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:50:59+08:00 ] 10.135.33.45 101.104.33.46 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.019087s][吞吐率：52.39req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T06:51:00+08:00 ] 10.135.33.45 101.104.60.79 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.017655s][吞吐率：56.64req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T07:03:32+08:00 ] 10.135.33.45 101.104.61.145 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.021748s][吞吐率：45.98req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T07:48:16+08:00 ] 10.135.33.45 101.104.50.36 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.018976s][吞吐率：52.70req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T08:50:29+08:00 ] 10.135.33.45 101.104.59.155 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.019299s][吞吐率：51.82req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:12:19+08:00 ] 10.135.33.45 101.104.62.200 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.022514s][吞吐率：44.42req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:39+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionwp-includes/js/comment-reply.min.js
+[ info ] 119.29.24.237/struts2-032/index.actionwp-includes/js/comment-reply.min.js [运行时间：0.020353s][吞吐率：49.13req/s] [内存消耗：975.26kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionwp-includes',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionwp-includes/js/comment-reply_min_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:40+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionskins/vector/csshover.htc
+[ info ] 119.29.24.237/struts2-032/index.actionskins/vector/csshover.htc [运行时间：0.017758s][吞吐率：56.31req/s] [内存消耗：975.08kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionskins',
+    2 => 'vector',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionskins/vector/csshover_htc' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:41+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionmisc/states.js
+[ info ] 119.29.24.237/struts2-032/index.actionmisc/states.js [运行时间：0.019771s][吞吐率：50.58req/s] [内存消耗：975.02kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionmisc',
+    2 => 'states.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionmisc/states_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:41+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionstatic/js/md5.js
+[ info ] 119.29.24.237/struts2-032/index.actionstatic/js/md5.js [运行时间：0.017983s][吞吐率：55.61req/s] [内存消耗：975.06kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionstatic',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionstatic/js/md5_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:42+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actioninclude/js/md5.js
+[ info ] 119.29.24.237/struts2-032/index.actioninclude/js/md5.js [运行时间：0.018020s][吞吐率：55.49req/s] [内存消耗：975.05kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actioninclude',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actioninclude/js/md5_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:43+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actioninclude/js/common.js
+[ info ] 119.29.24.237/struts2-032/index.actioninclude/js/common.js [运行时间：0.017344s][吞吐率：57.66req/s] [内存消耗：975.08kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actioninclude',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actioninclude/js/common_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:43+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actioninclude/js/ajax.js
+[ info ] 119.29.24.237/struts2-032/index.actioninclude/js/ajax.js [运行时间：0.021012s][吞吐率：47.59req/s] [内存消耗：975.07kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actioninclude',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actioninclude/js/ajax_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:44+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionres/js/dev/pages/common/global.js
+[ info ] 119.29.24.237/struts2-032/index.actionres/js/dev/pages/common/global.js [运行时间：0.027104s][吞吐率：36.90req/s] [内存消耗：975.62kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionres',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionres/js/dev/pages/common/global_js' => '',
+  'dev' => 'pages',
+  'common' => 'global.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:45+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionjs/wind_editor.js
+[ info ] 119.29.24.237/struts2-032/index.actionjs/wind_editor.js [运行时间：0.020477s][吞吐率：48.84req/s] [内存消耗：975.06kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionjs',
+    2 => 'wind_editor.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionjs/wind_editor_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:45+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionstyles/prosilver/template/forum_fn.js
+[ info ] 119.29.24.237/struts2-032/index.actionstyles/prosilver/template/forum_fn.js [运行时间：0.017666s][吞吐率：56.61req/s] [内存消耗：975.60kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionstyles',
+    2 => 'prosilver',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionstyles/prosilver/template/forum_fn_js' => '',
+  'template' => 'forum_fn.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:46+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionstyles/prosilver/template/styleswitcher.js
+[ info ] 119.29.24.237/struts2-032/index.actionstyles/prosilver/template/styleswitcher.js [运行时间：0.018668s][吞吐率：53.57req/s] [内存消耗：975.66kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionstyles',
+    2 => 'prosilver',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionstyles/prosilver/template/styleswitcher_js' => '',
+  'template' => 'styleswitcher.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:47+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actioneditor/ubb/uploader.js
+[ info ] 119.29.24.237/struts2-032/index.actioneditor/ubb/uploader.js [运行时间：0.020385s][吞吐率：49.06req/s] [内存消耗：975.08kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actioneditor',
+    2 => 'ubb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actioneditor/ubb/uploader_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:47+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actiontemplate/default/style.css
+[ info ] 119.29.24.237/struts2-032/index.actiontemplate/default/style.css [运行时间：0.019745s][吞吐率：50.65req/s] [内存消耗：975.11kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actiontemplate',
+    2 => 'default',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actiontemplate/default/style_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:48+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionstatic/js/reset.js
+[ info ] 119.29.24.237/struts2-032/index.actionstatic/js/reset.js [运行时间：0.017257s][吞吐率：57.95req/s] [内存消耗：975.05kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionstatic',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionstatic/js/reset_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:49+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionimages/js/common.js
+[ info ] 119.29.24.237/struts2-032/index.actionimages/js/common.js [运行时间：0.024256s][吞吐率：41.23req/s] [内存消耗：975.07kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionimages',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionimages/js/common_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:49+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actiontemplets/style/dede.css
+[ info ] 119.29.24.237/struts2-032/index.actiontemplets/style/dede.css [运行时间：0.024215s][吞吐率：41.30req/s] [内存消耗：975.07kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actiontemplets',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actiontemplets/style/dede_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:50+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actioninclude/dedeajax2.js
+[ info ] 119.29.24.237/struts2-032/index.actioninclude/dedeajax2.js [运行时间：0.023900s][吞吐率：41.84req/s] [内存消耗：975.07kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actioninclude',
+    2 => 'dedeajax2.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actioninclude/dedeajax2_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:50+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionimages/default/inc.js
+[ info ] 119.29.24.237/struts2-032/index.actionimages/default/inc.js [运行时间：0.023385s][吞吐率：42.76req/s] [内存消耗：975.07kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionimages',
+    2 => 'default',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionimages/default/inc_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:51+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionjs/lang/core/zh-cn.js
+[ info ] 119.29.24.237/struts2-032/index.actionjs/lang/core/zh-cn.js [运行时间：0.019621s][吞吐率：50.97req/s] [内存消耗：975.33kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionjs',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionjs/lang/core/zh-cn_js' => '',
+  'core' => 'zh-cn.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:52+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionjs/lang/cms/zh-cn.js
+[ info ] 119.29.24.237/struts2-032/index.actionjs/lang/cms/zh-cn.js [运行时间：0.019660s][吞吐率：50.86req/s] [内存消耗：975.30kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionjs',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionjs/lang/cms/zh-cn_js' => '',
+  'cms' => 'zh-cn.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:52+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actiond/js/acmsd/ecms_dialog.js
+[ info ] 119.29.24.237/struts2-032/index.actiond/js/acmsd/ecms_dialog.js [运行时间：0.020708s][吞吐率：48.29req/s] [内存消耗：975.38kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actiond',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actiond/js/acmsd/ecms_dialog_js' => '',
+  'acmsd' => 'ecms_dialog.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:53+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionskin/default/js/tabs.js
+[ info ] 119.29.24.237/struts2-032/index.actionskin/default/js/tabs.js [运行时间：0.019172s][吞吐率：52.16req/s] [内存消耗：975.30kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionskin',
+    2 => 'default',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionskin/default/js/tabs_js' => '',
+  'js' => 'tabs.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:54+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionmedia/system/js/tab.js
+[ info ] 119.29.24.237/struts2-032/index.actionmedia/system/js/tab.js [运行时间：0.017884s][吞吐率：55.92req/s] [内存消耗：975.30kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionmedia',
+    2 => 'system',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionmedia/system/js/tab_js' => '',
+  'js' => 'tab.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:55+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionmedia/system/css/mootree.css
+[ info ] 119.29.24.237/struts2-032/index.actionmedia/system/css/mootree.css [运行时间：0.016766s][吞吐率：59.64req/s] [内存消耗：975.38kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionmedia',
+    2 => 'system',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionmedia/system/css/mootree_css' => '',
+  'css' => 'mootree.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:55+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionlang/zh/front.js
+[ info ] 119.29.24.237/struts2-032/index.actionlang/zh/front.js [运行时间：0.029612s][吞吐率：33.77req/s] [内存消耗：975.06kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionlang',
+    2 => 'zh',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionlang/zh/front_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:56+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionstyle/default/content.css
+[ info ] 119.29.24.237/struts2-032/index.actionstyle/default/content.css [运行时间：0.020881s][吞吐率：47.89req/s] [内存消耗：975.08kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionstyle',
+    2 => 'default',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionstyle/default/content_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:57+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionlang/zh/edit.js
+[ info ] 119.29.24.237/struts2-032/index.actionlang/zh/edit.js [运行时间：0.016486s][吞吐率：60.66req/s] [内存消耗：975.04kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionlang',
+    2 => 'zh',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionlang/zh/edit_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:57+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionrockmongo/
+[ info ] 119.29.24.237/struts2-032/index.actionrockmongo/ [运行时间：0.022741s][吞吐率：43.97req/s] [内存消耗：975.04kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionrockmongo',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionrockmongo/' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:58+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionserver-status
+[ info ] 119.29.24.237/struts2-032/index.actionserver-status [运行时间：0.019119s][吞吐率：52.30req/s] [内存消耗：975.05kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionserver-status',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionserver-status' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:50:59+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionueditor.all.js
+[ info ] 119.29.24.237/struts2-032/index.actionueditor.all.js [运行时间：0.018722s][吞吐率：53.41req/s] [内存消耗：975.05kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionueditor.all.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionueditor_all_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:51:00+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionwikilib.d/PmWiki.ChangeLog
+[ info ] 119.29.24.237/struts2-032/index.actionwikilib.d/PmWiki.ChangeLog [运行时间：0.023575s][吞吐率：42.42req/s] [内存消耗：975.12kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionwikilib.d',
+    2 => 'PmWiki.ChangeLog',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionwikilib_d/PmWiki_ChangeLog' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:51:00+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.action4e5e5d7364f443e28fbf0d3ae744a59a
+[ info ] 119.29.24.237/struts2-032/index.action4e5e5d7364f443e28fbf0d3ae744a59a [运行时间：0.019762s][吞吐率：50.60req/s] [内存消耗：975.23kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.action4e5e5d7364f443e28fbf0d3ae744a59a',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_action4e5e5d7364f443e28fbf0d3ae744a59a' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:51:01+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.actionjenkins/
+[ info ] 119.29.24.237/struts2-032/index.actionjenkins/ [运行时间：0.017789s][吞吐率：56.21req/s] [内存消耗：975.02kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionjenkins',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionjenkins/' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T09:51:02+08:00 ] 10.135.33.45 101.226.35.225 GET /struts2-032/index.action
+[ info ] 119.29.24.237/struts2-032/index.action [运行时间：0.027450s][吞吐率：36.43req/s] [内存消耗：974.87kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.action',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'xx=xxx',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'referer' => 'http://119.29.24.237:80/struts2-032/index.action',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_action' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T11:14:50+08:00 ] 10.135.33.45 101.226.64.174 GET /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.020126s][吞吐率：49.69req/s] [内存消耗：973.81kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T11:57:42+08:00 ] 10.135.33.45 187.38.179.109 GET /hndUnblock.cgi
+[ info ] 119.29.24.237/hndUnblock.cgi [运行时间：0.021849s][吞吐率：45.77req/s] [内存消耗：972.64kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hndUnblock.cgi',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Wget(linux)',
+  'host' => '119.29.24.237',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/hndUnblock_cgi' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T11:57:48+08:00 ] 10.135.33.45 187.38.179.109 GET /tmUnblock.cgi
+[ info ] 119.29.24.237/tmUnblock.cgi [运行时间：0.024504s][吞吐率：40.81req/s] [内存消耗：972.60kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'tmUnblock.cgi',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Wget(linux)',
+  'host' => '119.29.24.237',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/tmUnblock_cgi' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T11:57:54+08:00 ] 10.135.33.45 187.38.179.109 GET /moo
+[ info ] 119.29.24.237/moo [运行时间：0.024061s][吞吐率：41.56req/s] [内存消耗：972.60kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'moo',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Wget(linux)',
+  'host' => '119.29.24.237',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/moo' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T11:58:00+08:00 ] 10.135.33.45 187.38.179.109 GET /
+[ info ] 119.29.24.237/ [运行时间：0.055122s][吞吐率：18.14req/s] [内存消耗：2,367.38kb] [文件加载：59]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Wget(linux)',
+  'host' => '119.29.24.237',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wwwroot\119.29.24.237\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wwwroot\119.29.24.237\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'cats',
+  3 => 'controller',
+  4 => 'user',
+  5 => 'title',
+  6 => 'bigImages',
+  7 => 'smallImages',
+  8 => 'foodCates',
+  9 => 'dealFoods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001105s ] mysql:dbname=o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` <> 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'bozhou' LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 5 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,6,9,8,2)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 0 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1  AND `type` = 1 ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1506743880  AND `category_id` = 1  AND `city_id` = 12  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc LIMIT 4 [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2017-09-30T11:58:07+08:00 ] 10.135.33.45 187.38.179.109 POST /getcfg.php
+[ info ] 119.29.24.237/getcfg.php [运行时间：0.018586s][吞吐率：53.80req/s] [内存消耗：973.09kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'getcfg.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '60',
+  'user-agent' => 'Wget(linux)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => '119.29.24.237',
+  'cookie' => 'uid=Zd5iHiPget',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/getcfg_php' => '',
+  'A' => 'A
+_POST_SERVICES=DEVICE.ACCOUNT
+AUTHORIZED_GROUP=1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:13:10+08:00 ] 10.135.33.45 183.57.53.196 GET /struts2-032/index.actionrockmongo
+[ info ] 119.29.24.237/struts2-032/index.actionrockmongo [运行时间：0.029381s][吞吐率：34.04req/s] [内存消耗：974.18kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionrockmongo',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionrockmongo' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:18:45+08:00 ] 10.135.33.45 101.104.37.12 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.019918s][吞吐率：50.21req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:18:53+08:00 ] 10.135.33.45 101.104.37.179 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.018991s][吞吐率：52.66req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:19:00+08:00 ] 10.135.33.45 101.104.40.18 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.019624s][吞吐率：50.96req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:19:11+08:00 ] 10.135.33.45 101.104.49.227 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.020549s][吞吐率：48.66req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:19:51+08:00 ] 10.135.33.45 101.104.53.168 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.017788s][吞吐率：56.22req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:19:59+08:00 ] 10.135.33.45 101.104.35.230 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.024712s][吞吐率：40.47req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:20:03+08:00 ] 10.135.33.45 101.104.51.1 OPTIONS /IPC$
+[ info ] 119.29.24.237/IPC$ [运行时间：0.021063s][吞吐率：47.48req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'IPC$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/IPC$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:29:57+08:00 ] 10.135.33.45 113.108.21.80 GET /struts2-032/index.actionjenkins
+[ info ] 119.29.24.237/struts2-032/index.actionjenkins [运行时间：0.023336s][吞吐率：42.85req/s] [内存消耗：974.12kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'struts2-032',
+    1 => 'index.actionjenkins',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/struts2-032/index_actionjenkins' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T13:45:33+08:00 ] 10.135.33.45 101.104.34.219 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.019981s][吞吐率：50.05req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T14:53:30+08:00 ] 10.135.33.45 101.104.39.252 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.019754s][吞吐率：50.62req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T15:15:51+08:00 ] 10.135.33.45 101.104.59.159 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.018202s][吞吐率：54.94req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T15:17:44+08:00 ] 10.135.33.45 219.144.169.147 GET /phpmyadmin
+[ info ] 119.29.24.237/phpmyadmin [运行时间：0.025309s][吞吐率：39.51req/s] [内存消耗：973.76kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phpmyadmin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://119.29.24.237/phpmyadmin',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/phpmyadmin' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T15:17:44+08:00 ] 10.135.33.45 219.144.169.147 GET /phpmyadmin
+[ info ] 119.29.24.237/phpmyadmin [运行时间：0.019002s][吞吐率：52.63req/s] [内存消耗：973.76kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phpmyadmin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://119.29.24.237/phpmyadmin',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  '/phpmyadmin' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T15:45:04+08:00 ] 10.135.33.45 101.226.68.215 GET /tmUnblock.cgi
+[ info ] 119.29.24.237/tmUnblock.cgi [运行时间：0.024588s][吞吐率：40.67req/s] [内存消耗：973.88kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'tmUnblock.cgi',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/tmUnblock_cgi' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T16:53:55+08:00 ] 10.135.33.45 101.104.43.52 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.022247s][吞吐率：44.95req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T17:10:54+08:00 ] 10.135.33.45 14.17.21.58 GET /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.020313s][吞吐率：49.23req/s] [内存消耗：973.81kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T17:42:14+08:00 ] 10.135.33.45 119.29.1.238 GET /phpMyAdmin/scripts/setup.php
+[ info ] 119.29.24.237/phpMyAdmin/scripts/setup.php [运行时间：0.029800s][吞吐率：33.56req/s] [内存消耗：972.39kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phpMyAdmin',
+    1 => 'scripts',
+    2 => 'setup.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/phpMyAdmin/scripts/setup_php' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T17:42:14+08:00 ] 10.135.33.45 119.29.1.238 GET /pma/scripts/setup.php
+[ info ] 119.29.24.237/pma/scripts/setup.php [运行时间：0.016992s][吞吐率：58.85req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pma',
+    1 => 'scripts',
+    2 => 'setup.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/pma/scripts/setup_php' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T17:42:14+08:00 ] 10.135.33.45 119.29.1.238 GET /myadmin/scripts/setup.php
+[ info ] 119.29.24.237/myadmin/scripts/setup.php [运行时间：0.025749s][吞吐率：38.84req/s] [内存消耗：972.24kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'myadmin',
+    1 => 'scripts',
+    2 => 'setup.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/myadmin/scripts/setup_php' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T17:46:42+08:00 ] 10.135.33.45 101.104.34.77 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.020184s][吞吐率：49.54req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T17:53:16+08:00 ] 10.135.33.45 14.17.3.65 GET /phpmyadmin
+[ info ] 119.29.24.237/phpmyadmin [运行时间：0.026187s][吞吐率：38.19req/s] [内存消耗：973.91kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phpmyadmin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '119.29.24.237',
+)
+[ info ] [ PARAM ] array (
+  '/phpmyadmin' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T19:19:26+08:00 ] 10.135.33.45 101.104.58.119 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.021154s][吞吐率：47.27req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T19:53:00+08:00 ] 10.135.33.45 101.104.51.114 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.030724s][吞吐率：32.55req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T20:31:09+08:00 ] 10.135.33.45 101.104.60.84 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.018507s][吞吐率：54.03req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T22:02:02+08:00 ] 10.135.33.45 101.104.36.36 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.030389s][吞吐率：32.91req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T22:27:05+08:00 ] 10.135.33.45 101.104.40.163 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.019288s][吞吐率：51.85req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T22:55:21+08:00 ] 10.135.33.45 101.104.42.97 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.018514s][吞吐率：54.01req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T23:09:51+08:00 ] 10.135.33.45 101.104.61.68 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.023464s][吞吐率：42.62req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T23:40:06+08:00 ] 10.135.33.45 101.104.55.125 OPTIONS /ipc$
+[ info ] 119.29.24.237/ipc$ [运行时间：0.026952s][吞吐率：37.10req/s] [内存消耗：972.31kb] [文件加载：36]
+[ info ] [ LANG ] C:\wwwroot\119.29.24.237\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ipc$',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '119.29.24.237',
+  'translate' => 'f',
+  'user-agent' => 'Microsoft-WebDAV-MiniRedir/6.1.7601',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/ipc$' => '',
+)
+[ info ] [ LOG ] INIT File
